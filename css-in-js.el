@@ -4,7 +4,7 @@
 
 ;;; Author: Dan Orzechowski
 
-;;; URL: https://github.com/orzechowskid/css-in-js
+;;; URL: https://github.com/orzechowskid/css-in-js.el
 
 ;; Package-Requires: ((mmm-mode "20200908.2236") (scss-mode "20180123.1708"))
 
