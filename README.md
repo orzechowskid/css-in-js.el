@@ -7,7 +7,7 @@ Emacs minor mode to enable a better development experience for (some) CSS-in-JS.
 
 then this might be of use to you.
 
-![](https://repository-images.githubusercontent.com/303042672/e47cad80-0bbe-11eb-8ed2-bb0f150617c5)
+![](https://repository-images.githubusercontent.com/303181474/e8163180-0bca-11eb-8696-152ae6a45746)
 
 _above: `typescript-mode`, styled-components, and `company-mode` with `company-quickhelp-mode`_
 
