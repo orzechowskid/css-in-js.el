@@ -129,7 +129,6 @@
 (defun css-in-js--setup ()
   "Internal function."
 
-  (message "enabling...")
   (make-local-variable 'mmm-mode-ext-classes-alist)
   (dolist (cls css-in-js--ext-classes-alist)
     (add-to-list 'mmm-mode-ext-classes-alist cls))
