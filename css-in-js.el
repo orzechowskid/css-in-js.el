@@ -1,6 +1,6 @@
 ;;; css-in-js.el --- A minor mode used for CSS-in-JS -*- lexical-binding: t; -*-
 
-;;; Version: 1.0.0
+;;; Version: 1.0.1
 
 ;;; Author: Dan Orzechowski
 
@@ -74,7 +74,7 @@
      :front "\\(styled\\|css\\)[.()<>[:alnum:]]?+`"
      :front-offset 1
      :back "`;"
-     :back-offset -1)
+     :back-offset 0)
     ;; styled-jsx
     (css-in-js--styled-jsx-class
      :submode css-in-js--mmm-mode
@@ -132,6 +132,7 @@
   (make-local-variable 'mmm-mode-ext-classes-alist)
   (dolist (cls css-in-js--ext-classes-alist)
     (add-to-list 'mmm-mode-ext-classes-alist cls))
+  (setq-local mmm-parse-when-idle t)
   (unless mmm-mode
     (setq css-in-js--manage-mmm t)
     (mmm-mode t)))
