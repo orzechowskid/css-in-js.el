@@ -61,11 +61,8 @@
 (define-derived-mode css-in-js--mmm-mode scss-mode "style"
   "Internal function.  You probably want `css-in-js-mode' instead."
 
-  (setq indent-line-function
-        (lambda ()
-          (if css-in-js-enable-indentation
-              (css-in-js--do-indent)
-            "noindent"))))
+  (when css-in-js-enable-indentation
+    (setq indent-line-function css-in-js--do-indent)))
 
 
 (defvar css-in-js--mmm-classes-alist
@@ -160,7 +157,7 @@
   :prefix "css-in-js-")
 
 (defcustom css-in-js-enable-indentation t
-  "Set to t to enable indentation, or nil to disable."
+  "Set to t to enable context-aware indentation, or nil to use scss-mode's default indentation function."
   :type 'boolean
   :group 'css-in-js)
 
