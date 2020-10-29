@@ -1,6 +1,6 @@
 ;;; css-in-js.el --- A minor mode used for CSS-in-JS -*- lexical-binding: t; -*-
 
-;;; Version: 1.0.1
+;;; Version: 1.1.0
 
 ;;; Author: Dan Orzechowski
 
@@ -61,7 +61,11 @@
 (define-derived-mode css-in-js--mmm-mode scss-mode "style"
   "Internal function.  You probably want `css-in-js-mode' instead."
 
-  (setq indent-line-function 'css-in-js--do-indent))
+  (setq indent-line-function
+        (lambda ()
+          (if css-in-js-enable-indentation
+              (css-in-js--do-indent)
+            "noindent"))))
 
 
 (defvar css-in-js--mmm-classes-alist
@@ -149,6 +153,16 @@
 
 ;; the actual minor mode
 
+
+(defgroup css-in-js nil
+  "Minor mode for editing css-in-js."
+  :group 'programming
+  :prefix "css-in-js-")
+
+(defcustom css-in-js-enable-indentation t
+  "Set to t to enable indentation, or nil to disable."
+  :type 'boolean
+  :group 'css-in-js)
 
 ;;;###autoload
 (define-minor-mode css-in-js-mode
