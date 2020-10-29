@@ -20,9 +20,9 @@ _above: `typescript-mode`, styled-components, and `company-mode` with `company-q
 
 ## Configuration
 
-`css-in-js-mode` itself has nothing to configure, but it uses `css-indent-offset` during indentation so be sure to set that to an acceptable value.
+useful variables are members of the `css-in-js-mode` group and can be viewed and modified with the command `M-x customize-group [RET] css-in-js-mode [RET]`.
 
-You might also be interested in playing around with `mmm-submode-decoration-sublevel`.
+`css-in-js-mode` also uses `css-indent-offset` during indentation so be sure to set that to an acceptable value.  You might also be interested in playing around with `mmm-submode-decoration-sublevel`.
 
 ## Bugs?
 
