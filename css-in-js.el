@@ -62,7 +62,7 @@
   "Internal function.  You probably want `css-in-js-mode' instead."
 
   (when css-in-js-enable-indentation
-    (setq indent-line-function css-in-js--do-indent)))
+    (setq indent-line-function #'css-in-js--do-indent)))
 
 
 (defvar css-in-js--mmm-classes-alist
