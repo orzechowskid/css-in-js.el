@@ -1,6 +1,6 @@
 ;;; css-in-js.el --- A minor mode used for CSS-in-JS -*- lexical-binding: t; -*-
 
-;;; Version: 1.1.0
+;;; Version: 1.1.1
 
 ;;; Author: Dan Orzechowski
 
