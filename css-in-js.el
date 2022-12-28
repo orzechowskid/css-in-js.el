@@ -100,7 +100,7 @@
 (defun css-in-js--capf ()
   "Internal function."
 
-  ;; Autocompletion in `css-mode' is correctly triggered for CSS *selectors* on the first line of a managed buffer, but is not triggered for CSS *property names*.  Which is fair; that's not valid [S]CSS, but it IS valid for styled-components.  This is a poor attempt to address that shortcoming
+  ;; Autocompletion in `css-mode' is correctly triggered for CSS *selectors* on the first line of a managed buffer, but is not triggered for CSS *rules*.  Which is fair; that's not valid [S]CSS, but it IS valid for styled-components.  This is a poor attempt to address that shortcoming
   (when
       (and
        (boundp 'mmm-current-submode)
