@@ -1,4 +1,6 @@
-> important note: emacs 29 and newer includes native support for treesit, meaning a lot of features of this minor mode are no longer needed.  users of emacs 29 are encouraged to try [the CSS-in-JS treesit grammar and emacs minor mode for emacs 29](https://github.com/orzechowskid/tree-sitter-css-in-js).  users of emacs 28, read on!
+# emacs 29 and treesit
+
+emacs 29 and newer includes native support for treesit, meaning a lot of features of this minor mode are no longer needed.  users of emacs 29 are encouraged to try [the CSS-in-JS treesit grammar and emacs minor mode for emacs 29](https://github.com/orzechowskid/tree-sitter-css-in-js).  users of emacs 28, read on!
 
 # css-in-js.el
 Emacs minor mode to enable a better development experience for (some) CSS-in-JS.  If your webapp uses:
